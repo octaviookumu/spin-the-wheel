@@ -1,0 +1,124 @@
+body
+{
+    font-family: arial;
+}
+
+.back_img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    z-index: -30;
+}
+
+#confetti{
+    width: 100%;
+    height: 100vh;
+}
+
+.line{
+    height: 4rem;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+#prize{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;
+    animation: 4s anim-popoutin ease infinite;
+}
+
+@keyframes anim-popoutin {
+    0% {
+        color: green;
+    }
+    25% {
+        color: red;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: green;
+    }
+}
+
+
+/* Sets the background image for the wheel */
+td.the_wheel
+{
+    background-image: url(./saf_logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Do some css reset on selected elements */
+h1, p
+{
+    margin: 0;
+}
+
+div.power_controls
+{
+    margin-left:40px;
+}
+
+div.html5_logo
+{
+    margin-left:70px;
+}
+
+/* Styles for the power selection controls */
+table.power
+{
+    background-color: #cccccc;
+    cursor: pointer;
+    border:1px solid #333333;
+}
+
+table.power th
+{
+    background-color: white;
+    cursor: default;
+}
+
+tr{
+    z-index: 30;
+}
+
+td.pw1
+{
+    background-color: #3bb26b;
+}
+
+td.pw2
+{
+    background-color: #009a3e;
+}
+
+td.pw3
+{
+    background-color: #e31119;
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable
+{
+    cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom
+{
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px){
+    /*#prize{*/
+    /*    display: none;*/
+    /*}*/
+}
