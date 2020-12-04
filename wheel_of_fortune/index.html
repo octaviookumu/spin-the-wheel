@@ -2512,7 +2512,7 @@
                 {'fillStyle': '#e31119', 'text': 'Rocks', 'textFillStyle': '#000'},
                 {'fillStyle': '#009a3e', 'text': 'Guitar', 'textFillStyle': '#000'},
                 {'fillStyle': '#e31119', 'text': 'Rocks', 'textFillStyle': '#000'},
-                {'fillStyle': '#fff', 'text': 'Notebook', 'textFillStyle': '#000'},
+                {'fillStyle': '#fff', 'text': 'Headphones', 'textFillStyle': '#000'},
                 {'fillStyle': '#e31119', 'text': 'Rocks', 'textFillStyle': '#000'},
                 {'fillStyle': '#009a3e', 'text': 'Basketball', 'textFillStyle': '#000'},
                 {'fillStyle': '#e31119', 'text': 'Rocks', 'textFillStyle': '#000'},
@@ -2639,13 +2639,13 @@
     function alertPrize(indicatedSegment) {
         // Just alert to the user what happened.
         // In a real project probably want to do something more interesting than this with the result.
-        if (indicatedSegment.text !== 'Try Again') {
+        if (indicatedSegment.text !== 'Rocks') {
             confettiParams.number = 70;
             prize.innerHTML = `${indicatedSegment.text}!`;
             confettiLoop();
         } else {
             stopConfetti();
-            prize.innerHTML = `Try Again`;
+            prize.innerHTML = `Rocks`;
         }
     }
 </script>
